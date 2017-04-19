@@ -17,10 +17,12 @@ $icon-font-path: "/assets/fonts/";
 @import "bootstrap-callouts";
 
 .navbar-brand {
-  display: flex;
-  align-items: center;
+  display: inline-block;
+  float: left;
   > img {
-    padding: 7px 14px;
+    display: inline-block;
+    float: left;
+    margin: -7px 7px;
   }
 }
 
