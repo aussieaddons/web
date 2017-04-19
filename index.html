@@ -1,0 +1,110 @@
+---
+title: Home
+layout: default
+---
+<div class="row">
+	<div class="col-xs-8">
+		<h1>Aussie Add-ons</h1>
+		<p class="lead">Kodi repository of add-ons for Australian content.</p>
+
+		<p>We provide Kodi add-ons for all free-to-air TV providers in Australia and some on-demand and live (subscription) for AFL, NRL and Netball.</p>
+
+		<p>Most content is geo-blocked, so you will need to be in Australia, or have a suitable VPN provider for access.</p>
+
+		<a class="btn btn-default btn-lg" role="button" href="{{ site.baseurl }}/installation">
+			<i class="fa fa-cloud-download" aria-hidden="true"></i>&nbsp;Installation
+		</a>
+		<a class="btn btn-default btn-lg" role="button" href="https://github.com/xbmc-catchuptv-au">
+			<i class="fa fa-github" aria-hidden="true"></i>&nbsp;Source Code
+		</a>
+	</div>
+	<div class="col-xs-4">
+		<img class="img-responsive" alt="Aussie Addons logo" src="{{ site.baseurl }}/assets/images/logo.png">
+	</div>
+</div>
+
+<hr class="featurette-divider">
+
+<h2>Screenshots</h2>
+<div id="addon-carousel" class="carousel slide carousel-fade" data-ride="carousel">
+	{% assign gallery_files = site.static_files | where_exp:"item", "item.path contains 'images/gallery'" %}
+	<ol class="carousel-indicators">
+		{% for image in gallery_files %}
+		<li data-target="#addon-carousel" data-slide-to="{{ forloop.index }}" {% if forloop.index == 1 %}class="active"{% endif %}></li>
+		{% endfor %}
+	</ol>
+
+	<div class="carousel-inner">
+	{% for image in gallery_files %}
+		<div class="item {% if forloop.index == 1 %}active{% endif %}">
+			<img class="img-responsive center-block" src="{{ site.baseurl }}{{ image.path }}" alt="screenshot">
+		</div>
+	{% endfor %}
+	</div>
+
+	<a class="carousel-control left" href="#addon-carousel" data-slide="prev">
+		<span class="glyphicon glyphicon-chevron-left"></span>
+	</a>
+	<a class="carousel-control right" href="#addon-carousel" data-slide="next">
+		<span class="glyphicon glyphicon-chevron-right"></span>
+	</a>
+</div>
+
+<hr class="featurette-divider">
+
+<h2>Available Add-ons</h2>
+<div class="container addons-index">
+  <p>These are the add-ons currently available and supported:</p>
+  {% if site.addons != empty %}
+  {% for addon in site.addons %}
+	 {% assign loopindex = forloop.index | modulo: 4 %}
+	 {% if loopindex == 1 %}
+	 <div class="row">
+	 {% endif %}
+		<div class="col-sm-3">
+		  <a href="{{ site.baseurl }}{{ addon.id }}">
+			  <img class="img-responsive" alt="{{ addon.title }}" src="{{ site.baseurl }}/assets/images{{ addon.id }}.png">
+			  <h3>{{ addon.title }}</h3>
+		  </a>
+		  <p>{{ addon.description }}</p>
+		</div>
+	{% if loopindex == 0 %}
+	</div>
+	{% endif %}
+{% endfor %}
+{% endif %}
+</div>
+
+<hr class="featurette-divider">
+
+<h2>Get in touch</h2>
+
+  <div style="float:left;margin-right:10px;">
+    <i class="fa fa-slack fa-3x"></i>
+  </div>
+  <div>
+    We have a Slack chat room running, which you can use chat with us, and others also using our add-ons. Use the <a href="http://slack-invite.aussieaddons.com">sign-up page</a> and follow the instructions in your email.
+  </div>
+
+  <div class="clearfix visible-xs-block"></div>
+  <br>
+
+  <div style="float:left;margin-right:10px;">
+    <i class="fa fa-github fa-3x"></i>
+  </div>
+  <div>
+    We track bugs, issues and feature requests through each add-on's own GitHub issue tracker. You can find a link for the issue tracker in each of the <a href="{{ site.baseurl }}/addons/">add-ons pages</a>.
+  </div>
+
+  <div class="clearfix visible-xs-block"></div>
+  <br>
+
+  <div style="float:left;margin-right:10px;">
+    <i class="fa fa-twitter fa-3x"></i>
+  </div>
+  <div>
+    Follow <a href="https://twitter.com/aussieaddons">@aussieaddons</a> on Twitter for the latest Aussie Add-ons updates.
+  </div>
+
+  <div class="clearfix visible-xs-block"></div>
+  <br>

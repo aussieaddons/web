@@ -1,0 +1,28 @@
+---
+layout: default
+---
+<div class="page-header">
+  <h1>{{ page.title }}</h1>
+</div>
+
+<div class="row">
+  <div class="col-xs-10">
+    <p><strong>{{ page.description }}</strong></p>
+
+    <a class="btn btn-default" role="button" href="{{ page.github_url }}" target="_blank">
+      <i class="fa fa-code"></i>&nbsp;Source code
+    </a>
+    <a class="btn btn-default" role="button" href="{{ page.github_url }}/issues" target="_blank">
+      <i class="fa fa-exclamation-circle"></i>&nbsp;Issue tracker
+    </a>
+
+    <p>
+    {{ content }}
+	</p>
+  </div>
+
+  <div class="col-xs-2">
+    <img class="img-responsive pull-right" src="{{ site.baseurl }}/assets/images{{ page.id }}.png">
+  </div>
+
+</div>

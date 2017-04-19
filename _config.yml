@@ -1,0 +1,20 @@
+title: Aussie Add-ons
+tagline: Kodi repository of add-ons for Australian content.
+author:
+  name: Aussie Addons
+  email: aussieaddons@aussieaddons.com
+  github: aussieaddons
+  twitter: aussieaddons
+
+exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
+
+sass:
+  style: :compressed
+
+collections:
+  addons:
+    output: true
+    permalink: /addons/:path/
+
+analytics:
+  tracking_id: 'UA-97650894-1'
