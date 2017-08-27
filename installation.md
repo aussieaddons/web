@@ -9,6 +9,8 @@ permalink: /installation/
 
 Just follow the video below on how to add the repository quickly through Kodi.
 
+NOTE: The add-on path to use is [http://r.aussieaddons.com](http://r.aussieaddons.com)
+
 <div class="embed-responsive embed-responsive-16by9">
   <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/MYms1jQVA9Q" frameborder="0" allowfullscreen></iframe>
 </div>
@@ -16,7 +18,7 @@ Just follow the video below on how to add the repository quickly through Kodi.
 
 ## Manual installation
 
-First step is the grab the [repo ZIP file](http://aussieaddons.com/repo/repo.zip).
+First step is the grab the [repo ZIP file](http://r.aussieaddons.com/repo.zip).
 
 Download the ZIP file to your Kodi device and install through the menu via:
 

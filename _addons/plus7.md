@@ -3,7 +3,7 @@ id: plus7
 title: Plus7
 layout: addon
 description: PLUS7 offers video streaming of full length episodes as seen on Seven, 7TWO and other content partners.
-github_url: https://github.com/andybotting/xbmc-addon-plus7
+github_url: https://github.com/xbmc-catchuptv-au/plugin.video.plus7
 ---
 
 ## Current status

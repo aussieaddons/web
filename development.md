@@ -14,7 +14,7 @@ Along with our production repository, we also have a development repository wher
 
 If you would like to try out development versions of our add-ons, we encourage you to install the development repository.
 
-You can grab the the [development repository ZIP file](http://aussieaddons.com/repo/repo-devel.zip) or follow the instuctions on the [installation]({{ site.baseurl }}/installation) but choose the `repo-devel.zip` file instead.
+You can grab the the [development repository ZIP file](http://r.aussieaddons.com/repo-devel.zip) or follow the instuctions on the [installation]({{ site.baseurl }}/installation) but choose the `repo-devel.zip` file instead.
 
 
 ## Filing bug reports
