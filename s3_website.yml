@@ -1,0 +1,3 @@
+s3_bucket: aussieaddons.com
+s3_endpoint: ap-southeast-2
+s3_reduced_redundancy: true
