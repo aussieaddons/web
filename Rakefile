@@ -1,4 +1,4 @@
-require "rubygems"
+require 'rubygems'
 require 'rake'
 require 'yaml'
 require 'time'
@@ -10,12 +10,11 @@ CONFIG = {
   'post_ext' => "md",
 }
 
-# Usage: rake post title="A Title" [date="2012-02-09"] [tags=[tag1, tag2]]
+# Usage: rake post title="A Title" [date="2012-02-09"]
 desc "Begin a new post in #{CONFIG['posts']}"
 task :post do
   abort("rake aborted: '#{CONFIG['posts']}' directory not found.") unless FileTest.directory?(CONFIG['posts'])
   title = ENV["title"] || "new-post"
-  tags = ENV["tags"] || "[]"
   slug = title.downcase.strip.gsub(' ', '-').gsub(/[^\w-]/, '')
   begin
     date = (ENV['date'] ? Time.parse(ENV['date']) : Time.now).strftime('%Y-%m-%d')
@@ -34,11 +33,10 @@ task :post do
     post.puts "layout: post"
     post.puts "title: \"#{title.gsub(/-/,' ')}\""
     post.puts 'description: ""'
-    post.puts "category: "
-    post.puts "tags: #{tags}"
     post.puts "---"
     post.puts ""
   end
+	exec("#{ENV['EDITOR']} #{filename}")
 end # task :post
 
 # Usage: rake page title="Foo bar"
@@ -63,6 +61,7 @@ task :page do
     post.puts "---"
     post.puts ""
   end
+	exec("#{ENV['EDITOR']} #{filename}")
 end # task :page
 
 desc "Launch preview environment"

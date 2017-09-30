@@ -6,6 +6,8 @@ author:
   github: aussieaddons
   twitter: aussieaddons
 
+url: http://aussieaddons.com
+
 exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
 
 sass:

@@ -3,6 +3,7 @@ layout: page
 title: Development
 group: navigation
 permalink: /development/
+order: 06
 ---
 
 We're working hard to keep up with streaming service changes, but occasionally things don't always work right. There's hope though.

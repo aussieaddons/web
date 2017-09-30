@@ -3,6 +3,7 @@ title: Installation
 layout: page
 group: navigation
 permalink: /installation/
+order: 03
 ---
 
 ## Easy installation

@@ -3,6 +3,7 @@ layout: page
 title: Contact us
 group: navigation
 permalink: /contact/
+order: 10
 ---
 
 ## Slack

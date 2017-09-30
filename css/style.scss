@@ -9,6 +9,7 @@ $headings-font-family: Roboto, Ubuntu, "Helvetica Neue", Helvetica, Arial, sans-
 $headings-font-weight: 300;
 $font-size-h1: 42px; // font-size-base * 3
 
+
 $icon-font-path: "/assets/fonts/";
 
 // import bootstrap
@@ -26,6 +27,10 @@ $icon-font-path: "/assets/fonts/";
   }
 }
 
+.navbar-inverse {
+  background-color: #2a2730;
+}
+
 .featurette-divider {
   margin: 40px 0;
 }
@@ -37,8 +42,8 @@ $icon-font-path: "/assets/fonts/";
 }
 
 .addon-list {
-    width: 50%;
-    height: auto;
+  width: 50%;
+  height: auto;
 }
 
 .addons-index {
@@ -128,5 +133,40 @@ $icon-font-path: "/assets/fonts/";
 @media(min-width: 1200px) {
   .container {
     max-width: 960px;
+  }
+}
+
+.footer-bs {
+  background-color: #2a2730;
+  color: #99979c;
+  margin-top: 40px;
+  padding: 20px 20px;
+  font-size: 12px;
+  a {
+    color: #fff;
+  }
+  ul {
+    list-style: none;
+    padding: 0px;
+  }
+  li {
+    padding: 5px 4px;
+  }
+  .footer-brand {
+    h3 {
+      margin-top: 10px;
+    }
+    p {
+      font-size: 12px;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .footer-bs {
+    .footer-nav,
+    .footer-social {
+      border-left: solid 1px rgba(255, 255, 255, 0.10);
+    }
   }
 }
