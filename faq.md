@@ -16,4 +16,8 @@ This is due to the `ssd_wv` library missing or an error with it, like a version 
 
 &nbsp;  
 
+#### DRM streams show grey/black screen of garbage with Kodi v17 on Android
+The simplest solution for this is to upgrade to a nightly build of Kodi v18 from <a href="http://mirrors.kodi.tv/nightlies/android/">http://mirrors.kodi.tv/nightlies/android/</a>. 
+
+&nbsp;
 

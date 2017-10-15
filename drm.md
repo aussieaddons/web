@@ -27,6 +27,11 @@ Android can be supported by native Widevine support that is included within the 
 
 This generally means that many cheap Android _sticks_ from China won't include this support.
 
+<div class="bs-callout bs-callout-danger">
+  <h4>Issues decoding DRM content with Kodi v17 on Android</h4>
+  In some cases, decoding DRM content will fail in Kodi v17 and you will see a grey/black screen of garbage. The simplest solution for this is to upgrade to a nightly build of Kodi v18 from <a href="http://mirrors.kodi.tv/nightlies/android/">http://mirrors.kodi.tv/nightlies/android/</a>
+</div>
+
 ## Installation
 
 The `DRM Helper` add-on is installed automatically when installing any of our add-ons that require it.
