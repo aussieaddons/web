@@ -9,4 +9,4 @@ issues after AFL has just make some changes to their service.
 Our free access to match replays is no longer available with the recent
 changes. To watch replays, you will now require an **AFL Live Pass**.
 
-For more information, see the [AFL Video add-on](/addons/afl/) page.
+For more information, see the [AFL Video add-on]({{ site.url }}{{ site.baseurl }}/addons/afl/) page.
