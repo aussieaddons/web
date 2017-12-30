@@ -1,17 +1,15 @@
 ---
 id: plus7
-title: Plus7
+title: 7plus
 layout: addon
-description: PLUS7 offers video streaming of full length episodes as seen on Seven, 7TWO and other content partners.
+description: Watch full episodes of your favourite TV shows as seen on Seven, 7mate, 7TWO, 7flix and racing.com, live and free.
 github_url: https://github.com/xbmc-catchuptv-au/plugin.video.plus7
 ---
 
 ## Current status
 
-Plus7 is supported, but some programs are not available.
+7plus is the new service from Seven, after Plus7 was deprecated.
 
-Some programs (generally non-Australian produced content) are not watchable due to Digital Rights Management (DRM) being enforced on them.
+7plus is currently fully supported, with many shows available in high quality.
 
-There is a way to enable DRM support (using Widevine) in Kodi and we have successfully tested this, but it is complex and not ready for general use.
-
-We are optimistic that Widevine DRM support will be available in Kodi v18 later this year.
+Streams are served as MPEG-DASH (over HTTP) with h264 video encoding.
