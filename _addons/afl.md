@@ -3,7 +3,7 @@ id: afl
 title: AFL Video
 layout: addon
 description: Watch the latest AFL replays, news and match reports. Live streaming and match replays available with a valid AFL Live Pass.
-github_url: https://github.com/xbmc-catchuptv-au/plugin.video.afl-video
+github_url: https://github.com/aussieaddons/plugin.video.afl-video
 ---
 
 ## Current status

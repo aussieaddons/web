@@ -3,7 +3,7 @@ id: sbs
 title: SBS On Demand
 layout: addon
 description: SBS On Demand provides free, unlimited streaming of TV shows, films and events. Watch full episodes of your favourite SBS shows online when you want.
-github_url: https://github.com/xbmc-catchuptv-au/plugin.video.sbs
+github_url: https://github.com/aussieaddons/plugin.video.sbs
 ---
 
 ## Current status
