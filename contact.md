@@ -21,4 +21,5 @@ Follow [@aussieaddons](https://twitter.com/aussieaddons) on <i class="fa fa-twit
 
 ## GitHub
 
-We track bugs, issues and feature requests through each add-on's own <i class="fa fa-github"> GitHub</i> issue tracker. You can find a link for the issue tracker in each [add-ons page]({{ site.baseurl }}/addons).
+We track bugs, issues and feature requests through each add-on's own <i class="fa fa-github"> GitHub</i> issue tracker. Check out our <a href="https://github.com/aussieaddons">GitHub organisation</a> for details.
+
