@@ -4,6 +4,8 @@ env:
   - secure: cJ9ROT8JnOWTaWERppuKy3zbJSJI8gd6nq5g3YKYJ3UuegZQyQFBgYRp1lI//0xgZK4M41rrAg1j+Vm0WJQD2a5GrebIV8rbrKTT2ClAFoqqHjLS+nCtwx+cBMqTCB7HimEHZNYx+1N1SX+plST4afNw9T4zZN/PfZ3tgkMdI9BcJyl5ZByFTnxXInR4mdmBKBsNNLTo95zaweJphkLWeIU4TfXsKxK2Q0rZoHC8HQjeSgC2viqvTQy+R7CczxeB/9nQty8Q4HM/CNLo53anlqRf9l20EZb1tRJvpBOUX7EyBznPY4P6a9F5wGGGnicAim58eUwIQ/EsWUHkULRCXXNx9UjSnB1cEqwqPsOd0BEZXeklbJub2M7up5XbQ9eVGHoFR0EBTuJVpyG5kOfJrc+fw4Pl8cy437EnlSvJCQrM9S5Lep8SMweWQ6Nmqswv2l5Hqw8gURzkZ/I6vHaxoOJcNP+w1aCnwsfE9XUY2y/oCaoNEN/v64FRv/zgmcJlMTdpcRMOeVvze9ZEOr+i7xsoFpeoT9nHxuKBIS84ZR6COiCaw4zcVD5beYauIpQHnv4Y9D+b2yICln07jopvWlWu+IqlwPK3Vhf7pG+TV8gSpPb9cAxnYWSBu26fIOcndafd0+oX1EFDumU43yDAu3xSLhaLwzh0aiajRxIJMBs=
 dist: xenial
 language: ruby
+before_install: 
+  - sudo apt-get install oracle-java8-set-default
 install:
   - bundle install
   - gem install s3_website
