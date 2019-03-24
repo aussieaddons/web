@@ -1,0 +1,24 @@
+---
+title: Add-ons
+layout: page
+group: navigation
+order: 01
+---
+{% if site.addons != empty %}
+{% for addon in site.addons %}
+<div class="media">
+  <div class="media-left">
+    <a href="{{ site.baseurl }}{{ addon.id }}">
+      <img src="{{ site.baseurl }}/assets/images{{ addon.id }}.png" class="media-object" alt="{{ addon.title }}" style="width:100px">
+	</a>
+  </div>
+  <div class="media-body">
+    <a href="{{ site.baseurl }}{{ addon.id }}">
+      <h2 class="media-heading">{{ addon.title }}</h2>
+	</a>
+    <p>{{ addon.description }}</p>
+  </div>
+</div>
+<br />
+{% endfor %}
+{% endif %}

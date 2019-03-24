@@ -89,4 +89,3 @@ Home broadband customers and any Telstra IDs that are linked to home broadband a
 There may also be other service types that cause this issue.
 
 The work around is simply to create a new Telstra ID and re link your eligible service to that.
-

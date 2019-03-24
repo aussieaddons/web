@@ -20,3 +20,6 @@ collections:
 
 analytics:
   tracking_id: 'UA-97650894-1'
+
+exclude:
+ - vendor

@@ -26,7 +26,7 @@ task :post do
   if File.exist?(filename)
     abort("rake aborted!") if ask("#{filename} already exists. Do you want to overwrite?", ['y', 'n']) == 'n'
   end
-  
+
   puts "Creating new post: #{filename}"
   open(filename, 'w') do |post|
     post.puts "---"
@@ -49,7 +49,7 @@ task :page do
   if File.exist?(filename)
     abort("rake aborted!") if ask("#{filename} already exists. Do you want to overwrite?", ['y', 'n']) == 'n'
   end
-  
+
   puts "Creating new page: #{filename}"
   open(filename, 'w') do |post|
     post.puts "---"
@@ -64,10 +64,16 @@ task :page do
 	exec("#{ENV['EDITOR']} #{filename}")
 end # task :page
 
+
+desc "Install"
+task :install do
+  system "bundle install --path vendor/bundle"
+end # task :install
+
 desc "Launch preview environment"
-task :preview do
-  system "jekyll serve -w"
-end # task :preview
+task :serve do
+  system "bundle exec jekyll serve -w -H 0.0.0.0"
+end # task :serve
 
 
 def ask(message, valid_options)
