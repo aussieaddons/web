@@ -20,7 +20,7 @@ For platform support, this means that we can support:
  * Mac OS X
  * Android and Android TV devices (only with included DRM support, see below)
  * Linux x64 and x32
- * Linux ARM v6 and v7 (e.g. Raspberry Pi)
+ * Linux ARM v7 and v8 (32bit) (e.g. Raspberry Pi 2 & 3)
 
 Some platforms that are not supported are:
 
