@@ -28,7 +28,7 @@ The platforms that we can support are:
  * Mac OS X
  * Android and Android TV devices (only with included DRM support, see below)
  * Linux x64 and x32
- * Linux ARMv7 (e.g. Raspberry Pi 2/3)
+ * Linux ARMv7 and ARMv8 (e.g. Raspberry Pi 2/3)
 
 ## Unsupported platforms
 
