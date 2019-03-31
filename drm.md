@@ -12,21 +12,29 @@ On many platforms, we support decoding of these streams using the Inputstream.Ad
 
 We have built a `DRM Helper` add-on which manages the installation of the specific libraries required for decoding Widevine encrypted streams through Inputstream.Adaptive.
 
-For this to work, we rely on the Widevine DRM library shipped with the Google Chrome browser, and a layer that translates between it and Inputstream.Adaptive.
+For this to work, we rely on the Widevine DRM library shipped with the Google Chrome browser, and a layer that translates between it and Inputstream.Adaptive. This means we can generally support any platform that Google Chrome is built for.
 
-For platform support, this means that we can support:
+## Supported platforms
 
- * Windows (not from Windows Store, see below)
+The platforms that we can support are:
+
+ * Windows (not UWP from Windows Store, see below)
  * Mac OS X
  * Android and Android TV devices (only with included DRM support, see below)
  * Linux x64 and x32
- * Linux ARM v6 and v7 (e.g. Raspberry Pi)
+ * Linux ARMv7 (e.g. Raspberry Pi 2/3)
 
-Some platforms that are not supported are:
+## Unsupported platforms
 
- * Windows (from Windows Store)
+Some specific platforms that we can't support (for various reasons):
+
+ * Windows (UWP, from Windows Store)
  * Xbox One
+ * iOS (including Apple TV)
  * Android and Android TV devices (mostly Cheap Chinese boxes, see below)
+ * Linux ARMv6 (e.g. Raspberry Pi 1)
+
+## Specific platform details
 
 ### Windows
 
@@ -36,11 +44,11 @@ For Windows, Kodi can be be installed either directly, or from the Windows Store
 
 Kodi on the Xbox One is subject to the same security restrictions as Kodi installed on Windows from the Windows Store, where we are unable to load the Widevine DRM library. There is no away around this limitation, so we are unable to provide any Widevine DRM support to the Xbox One.
 
-### Android / Android TV
+### Android and Android TV
 
 Android can be supported by native Widevine support that is included within the Android operating system itself, but does require an _official_ device that includes the Widevine support from Google. This generally includes handsets TV boxes TVs from brand-name manufacturers.
 
-This generally means that many cheap Android _sticks_ from China won't include this support.
+This generally means that many cheap Android devices from China won't include this support, or support is broken. In some cases, using a third party firmware can break DRM decoding support. 
 
 Devices that we have had great success with, and recommend are:
  * NVIDIA Shield TV
