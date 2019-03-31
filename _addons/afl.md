@@ -18,13 +18,27 @@ AFL Video is fully supported, with the following functionality:
   <h4>Kodi version requirement</h4>
   You will need to use at least Kodi v17 for this to function correctly, due to the
   HTTPS encryption enforced on the streaming servers.
+
+  Kodi v18 is required for watching live matches, along with DRM support for
+  your platform. See our <a href="/drm">DRM support page</a> for more
+  information.
 </div>
 
 
-## Live streaming and match replays 
+## Live streaming and match replays
+
 You can use a valid AFL Live Pass subscription to watch live streaming and match
 replays through this add-on. This can be either a subscription paid for through AFL.com.au
 or it can be a Telstra free subscription through a mobile plan.
+
+<div class="bs-callout bs-callout-danger">
+  <h4>DRM support required for live matches</h4>
+  Since the 2019 season, live AFL matches are now protected with DRM.
+
+  Kodi v18 is required for watching live matches, along with DRM support for
+  your platform. See our <a href="/drm">DRM support page</a> for more
+  information.
+</div>
 
 To sign on, it is recommended you install the AFL app to your Android or iOS device
 and follow the setup instructions. Once completed, you should enter your account details
@@ -68,8 +82,7 @@ Then enter the 32 digit hexadecimal number that comes after **mis-uuid-** into t
 
 It's not going to be much fun entering this in if you're using a TV remote control.
 
-If you have access to anything else like a usb keyboard or smartphone remote control for Kodi then definitely save yourself the frustration.
-
+If you have access to anything else like a USB keyboard or smartphone remote control for Kodi then definitely save yourself the frustration.
 
 
 ### Methods 3: Telstra free subscription
